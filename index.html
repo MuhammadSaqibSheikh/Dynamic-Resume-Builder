@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Enter Your Details</h2>
+        <form id="resumeForm">
+            <label>Profile Picture:</label>
+            <input type="file" id="profilePic" accept="image/*">
+            <label>Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label>Profession:</label>
+            <input type="text" id="profession" placeholder="Enter your profession">
+            <label>Career Objective:</label>
+            <textarea id="objective" placeholder="Write your career objective"></textarea>
+            <label>Skills:</label>
+            <textarea id="skills" placeholder="Write your skills (comma-separated)"></textarea>
+            <label>Qualifications:</label>
+            <textarea id="qualifications" placeholder="Write your qualifications (comma-separated)"></textarea>
+            <label>Experience:</label>
+            <textarea id="experience" placeholder="Write your experience"></textarea>
+            <label>Projects:</label>
+            <textarea id="projects" placeholder="Write your projects"></textarea>
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+            <button type="button" onclick="printResume()">Print Resume</button>
+        </form>
+    </div>
+
+    <div id="resume" class="resume-container">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
